@@ -12,7 +12,7 @@ import {
 } from "@mui/material";
 import { AddShoppingCart } from "@mui/icons-material";
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
-import "../../styles/Card.scss";
+import "../../styles/Products.scss";
 
 const Products = () => {
   const products = [

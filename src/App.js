@@ -1,7 +1,7 @@
 
 import "./App.scss";
 import { BrowserRouter } from "react-router-dom";
-import Products from "./components/Products/Products";
+import { Products, Navbar } from "./components";
 
 
 
@@ -15,8 +15,8 @@ function App() {
     //   <AppRoutes />
     // </BrowserRouter>
     <>
+    <Navbar />
     <Products />
-
     </>
   );
 }

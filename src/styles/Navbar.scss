@@ -1,0 +1,42 @@
+$drawerWidth: 240px;
+
+
+.appbar {
+    box-shadow: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  }
+  
+  @media (min-width: 600px) {
+    .appBar {
+      width: calc(100% - $drawerWidth);
+      margin-left: $drawerWidth;
+    }
+}
+
+.navbar-typ {
+    flex-grow: 1;
+    align-items: center;
+    display: flex;
+    text-decoration: none;
+}
+
+.navbar-img {
+    margin-top: 8px;
+    margin-right: 10px;
+    height: 70px;
+    width: 170px;
+}
+
+.navbar-btn {
+    margin-right: 16px;
+}
+
+@media (min-width: 600px) {
+  .menuButton {
+    display: none;
+  }
+}
+
+.grow {
+    flex-grow: 1;
+}
