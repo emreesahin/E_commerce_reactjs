@@ -1,0 +1,39 @@
+import React from 'react'
+import { Grid, Card, CardMedia, CardContent, Typography, Rating, CardActions, Button, IconButton,  } from '@mui/material';
+import { FavoriteBorderIcon } from '@mui/icons-material'
+
+const Product = () => {
+  return (
+    <div>
+       <Grid xs={12} sm={6} md={4} lg={3}>
+                <Card className="products-card">
+                  <div className="card">
+                    <CardMedia
+                      className="product-image"
+                      image={product.imageSrc}
+                      title="title"
+                    />
+                    <CardContent>
+                      <div className="card-container">
+                        <Typography variant="h2">{product.name}</Typography>
+                        <Typography variant="body1">{product.description}</Typography>
+                      </div>
+                    </CardContent>
+                  </div>
+                  <Rating name="read-only" value={3} readOnly className="rating" />
+                  <Typography className="price">{product.price}</Typography>
+                  <CardActions className="wrapper">
+                    <Button variant="contained">
+                      <Typography marginRight='10px' className="typography">Sepete Ekle</Typography><AddShoppingCart />
+                    </Button>
+                    <IconButton aria-label="Add to Cart">
+                      <FavoriteBorderIcon marginRight='1px' />
+                    </IconButton>
+                  </CardActions>
+                </Card>
+              </Grid>
+    </div>
+  )
+}
+
+export default Product

@@ -28,7 +28,7 @@ function App() {
     // </BrowserRouter>
     <>
       <Navbar /> 
-      <Products />
+      <Products products = { products }/>
     </>
   );
 }
